@@ -5,8 +5,8 @@ import './Login.css';
 const LoginSystem = ({ onLoginSuccess }) => {
 
   const validCredentials = {
-    username: "MasaYoshi",
-    password: "johnMasa1234"
+    username: "steveMoravec",
+    password: "Moravec1234"
   };
 
   const [username, setUsername] = useState('');
