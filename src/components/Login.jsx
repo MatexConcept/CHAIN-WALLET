@@ -5,8 +5,8 @@ import './Login.css';
 const LoginSystem = ({ onLoginSuccess }) => {
 
   const validCredentials = {
-    username: "steveMoravec",
-    password: "Moravec1234"
+    username: import.meta.env.VITE_USERNAME,
+    password: import.meta.env.VITE_PWD
   };
 
   const [username, setUsername] = useState('');
