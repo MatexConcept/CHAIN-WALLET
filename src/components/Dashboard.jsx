@@ -5,17 +5,18 @@ import { ArrowDownLeft, ArrowUpRight, Clock, DollarSign, LogOut, Wallet } from "
 import "./Dashboard.css"
 
 export default function Dashboard({onLogout}) {
-  const [balance] = useState(200)
+  const [balance] = useState(13000)
   const [activeTab, setActiveTab] = useState("all")
   const [toast, setToast] = useState({ show: false, message: '', type: '' });
 
 
   const transactions = [
-    { id: 1, type: "in", amount: 200, from: "0x8a3...45e2", date: "Mar 8, 10:24 AM", status: "Completed" },
-    { id: 2, type: "out", amount: 50, to: "0x3f5...87c1", date: "Jan 24, 6:15 PM", status: "Completed" },
-    { id: 4, type: "out", amount: 50, to: "0x7c8...12a5", date: "Jan 10, 11:45 AM", status: "Completed" },
-    { id: 5, type: "in", amount: 100, from: "0x4e6...78b3", date: "Dec 29, 9:20 AM", status: "Completed" },
-    
+    { id: 1, type: "in", amount: 5000, from: "0x8a3...45e2", date: "Mar 8, 10:24 AM", status: "Completed" },
+    { id: 2, type: "out", amount: 3000, to: "0x3f5...87c1", date: "Jan 30, 6:15 PM", status: "Completed" },
+    { id: 3, type: "in", amount: 8000, from: "0x4e6...78b3", date: "jan 24, 9:20 AM", status: "Completed" },
+    { id: 4, type: "out", amount: 2000, to: "0x7c8...12a5", date: "Jan 10, 11:45 AM", status: "Completed" },
+    { id: 5, type: "in", amount: 5000, from: "0x4e6...78b3", date: "Dec 29, 9:20 AM", status: "Completed" },
+   
   ]
 
   const filteredTransactions =
