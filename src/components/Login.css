@@ -125,7 +125,7 @@
     color: #4b5563;
   }
   
-  /* Toast notifications */
+
   .toast {
     position: fixed;
     top: 1rem;
@@ -154,7 +154,7 @@
     color: #b91c1c;
   }
   
-  /* Demo credentials */
+
   .demo-credentials {
     margin-top: 1rem;
     text-align: center;
